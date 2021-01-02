@@ -5,6 +5,9 @@ import java.util.*;
 **/
 interface Observable {
     // write your code here ...
+    void addObserver(Observer observer);
+    void removeObserver(Observer observer);
+    void notifyObservers();
 }
 
 /**
@@ -15,10 +18,30 @@ class RockstarGames implements Observable {
     public String releaseGame;
 
     // write your code here ...
+    ArrayList<Observer> observers = new ArrayList<>();
 
     public void release(String game) {
         this.releaseGame = game;
         // write your code here ...
+        notifyObservers();
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            System.out.println("Notification for gamer : " + observer);
+            observer.update(releaseGame);
+        }
     }
 }
 
@@ -27,6 +50,7 @@ class RockstarGames implements Observable {
 **/
 interface Observer {
     // write your code here ...
+    void update(String record);
 }
 
 /**
@@ -44,6 +68,14 @@ class Gamer implements Observer {
     }
 
     // write your code here ...
+    @Override
+    public void update(String game) {
+        if (games.contains(game)) {
+            System.out.println("What? They've already released this game ... I don't understand");
+        } else {
+            buyGame(game);
+        }
+    }
 
     public void buyGame(String game) {
         System.out.println(name + " says : \"Oh, Rockstar releases new game " + game + " !\"");
@@ -53,7 +85,8 @@ class Gamer implements Observer {
     @Override
     public String toString() {
         return this.name;
-    }    
+    }
+
 }
 
 /**

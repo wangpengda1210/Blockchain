@@ -23,16 +23,19 @@ class RockstarGames implements Observable {
     public void release(String releaseGame) {
         this.releaseGame = releaseGame;
         // write your code here ...
+        notifyObservers();
     }
 
     @Override
     public void addObserver(Observer observer) {
         // write your code here ...
+        observers.add(observer);
     }
 
     @Override
     public void removeObserver(Observer observer) {
         // write your code here ...
+        observers.remove(observer);
     }
 
     @Override

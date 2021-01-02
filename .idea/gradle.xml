@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Blockchain/task" />
+            <option value="$PROJECT_DIR$/Problems/A new rockstar game" />
             <option value="$PROJECT_DIR$/Problems/A simple calculator" />
             <option value="$PROJECT_DIR$/Problems/A sorted stream" />
             <option value="$PROJECT_DIR$/Problems/ASCII Art" />
@@ -26,6 +27,7 @@
             <option value="$PROJECT_DIR$/Problems/Counting clicks" />
             <option value="$PROJECT_DIR$/Problems/Disjunct all" />
             <option value="$PROJECT_DIR$/Problems/Finding max and min elements" />
+            <option value="$PROJECT_DIR$/Problems/Fix me" />
             <option value="$PROJECT_DIR$/Problems/Implementing the EntrySet method" />
             <option value="$PROJECT_DIR$/Problems/In a box" />
             <option value="$PROJECT_DIR$/Problems/Inverting streams" />
@@ -40,11 +42,13 @@
             <option value="$PROJECT_DIR$/Problems/Range quadratic sum" />
             <option value="$PROJECT_DIR$/Problems/Rehashing" />
             <option value="$PROJECT_DIR$/Problems/Removing" />
+            <option value="$PROJECT_DIR$/Problems/Rockstar games" />
             <option value="$PROJECT_DIR$/Problems/Secret codes" />
             <option value="$PROJECT_DIR$/Problems/Set average" />
             <option value="$PROJECT_DIR$/Problems/Smart house" />
             <option value="$PROJECT_DIR$/Problems/Sorting the absolute values" />
             <option value="$PROJECT_DIR$/Problems/Sum of divisors" />
+            <option value="$PROJECT_DIR$/Problems/Sum of neighbors" />
             <option value="$PROJECT_DIR$/Problems/The (un)-ordered sequence" />
             <option value="$PROJECT_DIR$/Problems/The average salary" />
             <option value="$PROJECT_DIR$/Problems/The chain of responsibility" />
